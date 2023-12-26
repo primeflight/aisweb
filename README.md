@@ -10,7 +10,8 @@ pip install -e git+https://github.com/primeflight/aisweb.git@main#egg=aisweb
 
 ## Docs
 
-- []()
+- [Abbreviations](/docs/abbreviations.md)
+- [Broadcasters](/docs/broadcasters.md)
 
 ## Credits
 
