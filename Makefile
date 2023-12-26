@@ -42,11 +42,11 @@ install:
 	if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
 lint:
-	black --line-length=100 --target-version=py38 --check .
-	flake8 --max-line-length=100 --ignore=E402,W503,E712 --exclude .venv,dependencies
+	black --line-length=150 --target-version=py38 --check .
+	flake8 --max-line-length=150 --ignore=E402,W503,E712 --exclude .venv,dependencies
 
 format:
-	black --line-length=100 --target-version=py38 .
+	black --line-length=150 --target-version=py38 .
 
 test:
 	coverage run --source=$(PROJECT_PATH) --omit=dependencies -m unittest

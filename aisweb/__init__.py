@@ -6,7 +6,8 @@ import json
 class AISWEB:
     @staticmethod
     def abbreviations():
-        directory = "data/abbreviations/"
+        project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "../"))
+        directory = os.path.join(project_root, "data/abbreviations/")
         files = glob.glob(os.path.join(directory, "*.json"))
 
         if files:
@@ -20,7 +21,9 @@ class AISWEB:
 
     @staticmethod
     def broadcasters():
-        directory = "data/broadcasters/"
+        project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "../"))
+
+        directory = os.path.join(project_root, "data/broadcasters/")
         files = glob.glob(os.path.join(directory, "*.json"))
 
         if files:
